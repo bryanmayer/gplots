@@ -165,7 +165,7 @@ venn <- function(data,
                     small=small,
                     showSetLogicLabel=showSetLogicLabel,
                     simplify=simplify,
-                    label_size = 1.5
+                    label_size = label_size
                     )
 
 

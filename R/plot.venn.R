@@ -259,11 +259,11 @@ drawVennDiagram <-function(data,small=0.7,
 		polygon(relocate_elp(elps, 306,180, 125))
 		polygon(relocate_elp(elps, 378,145, 200))
 
-		text( 20, 295, data.colnames[1],cex=label_size)
-		text(140, 380, data.colnames[2],cex=label_size)
+		text( 40, 295, data.colnames[1],cex=label_size)
+		text(140, 450, data.colnames[2],cex=label_size)
 		text(350, 318, data.colnames[3],cex=label_size)
 		text(350,   2, data.colnames[4],cex=label_size)
-		text( 50,  10, data.colnames[5],cex=label_size)
+		text( 35,  0, data.colnames[5],cex=label_size)
 
 		text( 61, 228, lab("10000",data));
 		text(194, 329, lab("01000",data));
