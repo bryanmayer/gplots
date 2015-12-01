@@ -155,7 +155,8 @@ venn <- function(data,
                  showSetLogicLabel=FALSE,
                  simplify=FALSE,
                  show.plot=TRUE,
-                 intersections=TRUE)
+                 intersections=TRUE,
+                 label_size = 1.5)
 {
   counts <- getVennCounts(data, universe=universe, intersections=intersections)
   
@@ -163,7 +164,8 @@ venn <- function(data,
     drawVennDiagram(data=counts,
                     small=small,
                     showSetLogicLabel=showSetLogicLabel,
-                    simplify=simplify
+                    simplify=simplify,
+                    label_size = 1.5
                     )
 
 

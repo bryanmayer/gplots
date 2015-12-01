@@ -21,7 +21,7 @@ plot.venn <- function(x, y, ...,
 
 
 drawVennDiagram <-function(data,small=0.7,
-		showSetLogicLabel=FALSE,simplify=FALSE) {
+		showSetLogicLabel=FALSE,simplify=FALSE, label_size = 1.5) {
 	numCircles<-NA
 	data.colnames<-NULL
 	data.rownames<-NULL
@@ -221,10 +221,10 @@ drawVennDiagram <-function(data,small=0.7,
 		polygon(relocate_elp(elps,135,200,200));
 		polygon(relocate_elp(elps,135,270,170));
 
-		text( 35, 315, data.colnames[1],cex=1.5)
-		text(138, 347, data.colnames[2],cex=1.5)
-		text(262, 347, data.colnames[3],cex=1.5)
-		text(365, 315, data.colnames[4],cex=1.5)
+		text( 35, 315, data.colnames[1],cex=label_size)
+		text(138, 347, data.colnames[2],cex=label_size)
+		text(262, 347, data.colnames[3],cex=label_size)
+		text(365, 315, data.colnames[4],cex=label_size)
 
 	        elps <- cbind(130*cos(seq(0,2*pi,len=1000)),
 			80*sin(seq(0,2*pi,len=1000)))
@@ -259,11 +259,11 @@ drawVennDiagram <-function(data,small=0.7,
 		polygon(relocate_elp(elps, 306,180, 125))
 		polygon(relocate_elp(elps, 378,145, 200))
 
-		text( 20, 295, data.colnames[1],cex=1.5)
-		text(140, 380, data.colnames[2],cex=1.5)
-		text(350, 318, data.colnames[3],cex=1.5)
-		text(350,   2, data.colnames[4],cex=1.5)
-		text( 50,  10, data.colnames[5],cex=1.5)
+		text( 20, 295, data.colnames[1],cex=label_size)
+		text(140, 380, data.colnames[2],cex=label_size)
+		text(350, 318, data.colnames[3],cex=label_size)
+		text(350,   2, data.colnames[4],cex=label_size)
+		text( 50,  10, data.colnames[5],cex=label_size)
 
 		text( 61, 228, lab("10000",data));
 		text(194, 329, lab("01000",data));
